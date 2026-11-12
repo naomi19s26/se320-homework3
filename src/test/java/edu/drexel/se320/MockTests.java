@@ -1,14 +1,13 @@
-/*
- The approach that I took to refactor the code so the mock dependency
- object could be properly passed is the "Passing the Collaborator" method.
- I chose this method because it gives us a very straightforward way to use
- Mockito with the Client. The connection mock object is guaranteed to be
- initialized when the client is created, making all parts needed for the
- client to work, set up correctly from the jump. It's a simple and clean
- approach that accomplishes the main task of the assignment, unlike the
- other factory methods discussed in class which would be overly complex
- for the task (a complexity not necessary for the assignment).
- */
+// The approach that I took to refactor the code so the mock dependency
+// object could be properly passed is the "Passing the Collaborator" method.
+// I chose this method because it gives us a very straightforward way to use
+// Mockito with the Client. The connection mock object is guaranteed to be
+// initialized when the client is created, making all parts needed for the
+// client to work, set up correctly from the jump. It's a simple and clean
+// approach that accomplishes the main task of the assignment, unlike the
+// other factory methods discussed in class which would be overly complex
+// for the task (a complexity not necessary for the assignment).
+
 package edu.drexel.se320;
 
 import java.io.IOException;
