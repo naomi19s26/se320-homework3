@@ -2,7 +2,7 @@
 // object could be properly injected is "Passing the Collaborator" method.
 // I chose this method because it gives us a very straightforward way to use Mockito with the Client. 
 // The mock object is guaranteed to be initialized when the client is created, preventing 
-// half-initialized states. It's a simple and clean approach that accomplishes 
+// half initialized states. It's a simple and clean approach that accomplishes 
 // the main task of the assignment, unlike the other factory methods discussed in class 
 // would be overly complex for the task. A complexity not necessary for the assignment.
 package edu.drexel.se320;
