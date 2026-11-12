@@ -1,10 +1,14 @@
-// The approach that I took to refactor the code so the mock dependency 
-// object could be properly injected is "Passing the Collaborator" method.
-// I chose this method because it gives us a very straightforward way to use Mockito with the Client. 
-// The mock object is guaranteed to be initialized when the client is created, preventing 
-// half initialized states. It's a simple and clean approach that accomplishes 
-// the main task of the assignment, unlike the other factory methods discussed in class 
-// would be overly complex for the task. A complexity not necessary for the assignment.
+/*
+ The approach that I took to refactor the code so the mock dependency
+ object could be properly passed is the "Passing the Collaborator" method.
+ I chose this method because it gives us a very straightforward way to use
+ Mockito with the Client. The connection mock object is guaranteed to be
+ initialized when the client is created, making all parts needed for the
+ client to work, set up correctly from the jump. It's a simple and clean
+ approach that accomplishes the main task of the assignment, unlike the
+ other factory methods discussed in class which would be overly complex
+ for the task (a complexity not necessary for the assignment).
+ */
 package edu.drexel.se320;
 
 import java.io.IOException;
@@ -75,7 +79,7 @@ public class MockTests {
     }
 
     // Test 2: connection succeeds, file search fails, no other methods called after. 
-    // Fails because original client code because code doesn't return null for invalid file cases.
+    // Fails because original client code doesn't return null for invalid file cases.
     @Test
     public void test2() throws IOException {
         when(mockConnection.connectTo("testServer")).thenReturn(true);
