@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.drexel.se320.MockTests" tests="16" skipped="0" failures="2" errors="0" timestamp="2026-11-12T03:31:43.065Z" hostname="NAOMI" time="1.777">
+  <properties/>
+  <testcase name="test10a()" classname="edu.drexel.se320.MockTests" time="1.17"/>
+  <testcase name="test10b()" classname="edu.drexel.se320.MockTests" time="0.009"/>
+  <testcase name="test10c()" classname="edu.drexel.se320.MockTests" time="0.008"/>
+  <testcase name="test10d()" classname="edu.drexel.se320.MockTests" time="0.007"/>
+  <testcase name="test10e()" classname="edu.drexel.se320.MockTests" time="0.004"/>
+  <testcase name="testMockDemo()" classname="edu.drexel.se320.MockTests" time="0.451"/>
+  <testcase name="test1()" classname="edu.drexel.se320.MockTests" time="0.002"/>
+  <testcase name="test2()" classname="edu.drexel.se320.MockTests" time="0.017">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;null&gt; but was: &lt;&gt;
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:308)
+	at edu.drexel.se320.MockTests.test2(MockTests.java:84)
+</failure>
+  </testcase>
+  <testcase name="test3()" classname="edu.drexel.se320.MockTests" time="0.005"/>
+  <testcase name="test4()" classname="edu.drexel.se320.MockTests" time="0.004"/>
+  <testcase name="test5()" classname="edu.drexel.se320.MockTests" time="0.003"/>
+  <testcase name="test6()" classname="edu.drexel.se320.MockTests" time="0.024">
+    <failure message="org.mockito.exceptions.verification.WantedButNotInvoked: &#10;Wanted but not invoked:&#10;serverConnection.closeConnection();&#10;-&gt; at edu.drexel.se320.MockTests.test6(MockTests.java:132)&#10;&#10;However, there were exactly 2 interactions with this mock:&#10;serverConnection.connectTo(&quot;testServer&quot;);&#10;-&gt; at edu.drexel.se320.Client.requestFile(Client.java:54)&#10;&#10;serverConnection.requestFileContents(&#10;    &quot;testFile.txt&quot;&#10;);&#10;-&gt; at edu.drexel.se320.Client.requestFile(Client.java:55)&#10;&#10;" type="org.mockito.exceptions.verification.WantedButNotInvoked">Wanted but not invoked:
+serverConnection.closeConnection();
+-&gt; at edu.drexel.se320.MockTests.test6(MockTests.java:132)
+
+However, there were exactly 2 interactions with this mock:
+serverConnection.connectTo(&quot;testServer&quot;);
+-&gt; at edu.drexel.se320.Client.requestFile(Client.java:54)
+
+serverConnection.requestFileContents(
+    &quot;testFile.txt&quot;
+);
+-&gt; at edu.drexel.se320.Client.requestFile(Client.java:55)
+
+
+	at edu.drexel.se320.MockTests.test6(MockTests.java:132)
+</failure>
+  </testcase>
+  <testcase name="test7()" classname="edu.drexel.se320.MockTests" time="0.016"/>
+  <testcase name="test8()" classname="edu.drexel.se320.MockTests" time="0.007"/>
+  <testcase name="test9()" classname="edu.drexel.se320.MockTests" time="0.003"/>
+  <testcase name="testServerConnectionFailureGivesNull()" classname="edu.drexel.se320.MockTests" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\aisos\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.7\fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
